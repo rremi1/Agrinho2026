@@ -103,3 +103,7 @@ section{
     height: 500px;
     padding: 50px;
 }
+
+html{
+    scroll-behavior: smooth;
+}
