@@ -1,6 +1,7 @@
-function irPara(id){
-    const secao = document.getElementById(id);
-    secao.scrollIntoView({
+function irParaSecao(id){
+
+    document.getElementById(id).scrollIntoView({
         behavior: "smooth"
     });
+
 }
