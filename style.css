@@ -52,5 +52,21 @@ h1{
 }
 
 .botao:hover{
-    
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+.texto-centro{
+    margin: 40px auto 10px;
+    background: #dcdcdc;
+    width: 320px;
+    padding: 15px;
+    border: 2px solid gray;
+    font-size: 24px;
+    color: #160d4b;
+}
+
+.secao{
+    padding: 100px 20px;
+    text-align: center;
 }
