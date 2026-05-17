@@ -1,3 +1,10 @@
+function irParaSecao(id){
+
+    document.getElementById(id).scrollIntoView({
+        behavior: "smooth"
+    });
+
+}
 <!-- CARD MEIO AMBIENTE -->
 <div class="card">
 
