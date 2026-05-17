@@ -1,11 +1,4 @@
-function irParaSecao(id){
-
-    document.getElementById(id).scrollIntoView({
-        behavior: "smooth"
-    });
-
-
-
+<!-- CARD MEIO AMBIENTE -->
 <div class="card">
 
     <img src="floresta.jpg" alt="Meio Ambiente">
@@ -14,9 +7,9 @@ function irParaSecao(id){
         Meio Ambiente
     </button>
 
-    <p class="clique">
-        (clique para saber mais)
-    </p>
+    <span class="clique">
+        clique para saber mais
+    </span>
 
 </div>
 
@@ -29,9 +22,8 @@ function irParaSecao(id){
         Produção
     </button>
 
-    <p class="clique">
-        (clique para saber mais)
-    </p>
+    <span class="clique">
+        clique para saber mais
+    </span>
 
 </div>
-}
