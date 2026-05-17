@@ -1,36 +1,56 @@
-body{
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
     background: #efefef;
     font-family: Georgia, serif;
 }
 
+/* CAIXA PRINCIPAL */
 .caixa{
     width: 100%;
-  min-height: 100vh;
+    min-height: 100vh;
+
     background: #d9b5ef;
     border: 5px solid #4d1b74;
-    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
 }
 
+/* TOPO */
 .topo{
     background: #120d4f;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
 }
 
 .topo h1{
     color: #d7b7ff;
-    margin: 0;
     font-size: 42px;
     font-weight: normal;
 }
 
 /* CONTEÚDO */
 .conteudo{
+    flex: 1;
+
     display: flex;
     justify-content: center;
+    align-items: center;
+
     gap: 80px;
-    padding: 40px;
+
+    padding: 60px 20px;
+
+    flex-wrap: wrap;
 }
 
 /* CARD */
@@ -42,12 +62,19 @@ body{
 .card img{
     width: 220px;
     height: 140px;
+
     object-fit: cover;
 
     border: 12px solid #bdf1e4;
     border-radius: 25px;
 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: 0.3s;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.card img:hover{
+    transform: translateY(-8px);
 }
 
 /* BOTÃO */
@@ -61,10 +88,14 @@ body{
     color: #120d4f;
 
     cursor: pointer;
+
     font-family: Georgia, serif;
+
+    transition: 0.3s;
 }
 
 .card button:hover{
+    transform: scale(1.05);
     text-decoration: underline;
 }
 
@@ -72,12 +103,12 @@ body{
 .texto{
     width: 320px;
 
-    margin: auto;
-    margin-bottom: 30px;
+    margin: 20px auto 40px;
 
     background: #d9d9d9;
 
     border: 2px solid gray;
+    border-radius: 12px;
 
     text-align: center;
 
@@ -85,6 +116,8 @@ body{
 
     color: #120d4f;
     font-size: 20px;
+
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
 }
 
 /* RODAPÉ */
@@ -92,17 +125,20 @@ body{
     background: #120d4f;
     color: white;
 
-    padding: 10px 20px;
+    padding: 15px 25px;
 
-    font-size: 14px;
+    margin-top: auto;
+}
+
+.rodape p{
+    margin: 5px 0;
 }
 
 /* SEÇÕES */
 section{
-    height: 500px;
-    padding: 50px;
-}
+    min-height: 100vh;
 
-html{
-    scroll-behavior: smooth;
+    padding: 60px;
+
+    background: white;
 }
