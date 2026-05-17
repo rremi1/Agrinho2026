@@ -3,34 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agrinho 2026.</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Agrinho 2026</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="container">
-        <h1>Semeando Futuros</h1>
-        <div class="cards">
-            <div class="cards">
-                <img src="img/floresta.jpg" alt="Meio Ambiente">
-                <button class="botao" onclick="irPara('meioAmbiente')"></button>
-            </div>
+
+    <div class="caixa">
+
+        <div class="topo">
+            <h1>Semeando Futuro ♡</h1>
+        </div>
+
+        <div class="conteudo">
+
+            <!-- CARD MEIO AMBIENTE -->
             <div class="card">
-                <img src="img/producao.jpg" alt="Produção">
-                <button class="botao" onclick="irPara('produção')"></button>
+
+                <img src="floresta.jpg" alt="Meio Ambiente">
+
+                <button onclick="irParaSecao('meioAmbiente')">
+                    Meio Ambiente
+                </button>
+
             </div>
+
+            <!-- CARD PRODUÇÃO -->
+            <div class="card">
+
+                <img src="producao.jpg" alt="Produção">
+
+                <button onclick="irParaSecao('producao')">
+                    Produção
+                </button>
+
             </div>
-            <div class="texto-centro"> Equilíbrio entre produção e meio ambiente</div>
-    </section>
-    <section id="meioAmbiente" class="secao">
+
+        </div>
+
+        <div class="texto">
+            Equilíbrio entre produção<br>
+            e meio ambiente
+        </div>
+
+        <div class="rodape">
+            <p>Instagram → seuinstagram</p>
+            <p>GitHub → seugithub</p>
+        </div>
+
+    </div>
+
+
+    <!-- SEÇÕES -->
+    <section id="meioAmbiente">
         <h2>Meio Ambiente</h2>
-        <p>Conteúdo sobre preservação ambiental.</p>
     </section>
-    <section id="producao" class="secao">
+
+    <section id="producao">
         <h2>Produção</h2>
-        <p>Conteúdo sobre produção sustentável.</p>
     </section>
 
     <script src="script.js"></script>
+
 </body>
 </html>
-
