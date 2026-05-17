@@ -5,7 +5,7 @@ function irParaSecao(id){
     });
 
 }
-<!-- CARD MEIO AMBIENTE -->
+
 <div class="card">
 
     <img src="floresta.jpg" alt="Meio Ambiente">
