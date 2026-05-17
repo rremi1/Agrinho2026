@@ -1,29 +1,52 @@
-<!-- CARD MEIO AMBIENTE -->
-<div class="card">
+function irParaSecao(id){
 
-    <img src="floresta.jpg" alt="Meio Ambiente">
+    // pega a seção pelo ID
+    const secao = document.getElementById(id);
 
-    <button onclick="irParaSecao('meioAmbiente')">
-        Meio Ambiente
-    </button>
+    // rolagem suave até a seção
+    secao.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
 
-    <span class="clique">
-        clique para saber mais
-    </span>
+}
 
-</div>
 
-<!-- CARD PRODUÇÃO -->
-<div class="card">
 
-    <img src="producao.jpg" alt="Produção">
+/* =========================================
+   EFEITO EXTRA NOS BOTÕES
+========================================= */
 
-    <button onclick="irParaSecao('producao')">
-        Produção
-    </button>
+const botoes = document.querySelectorAll(".card button");
 
-    <span class="clique">
-        clique para saber mais
-    </span>
+botoes.forEach((botao) => {
 
-</div>
+    botao.addEventListener("mouseenter", () => {
+        botao.style.transform = "scale(1.05)";
+    });
+
+    botao.addEventListener("mouseleave", () => {
+        botao.style.transform = "scale(1)";
+    });
+
+});
+
+
+
+/* =========================================
+   EFEITO EXTRA NAS IMAGENS
+========================================= */
+
+const imagens = document.querySelectorAll(".card img");
+
+imagens.forEach((imagem) => {
+
+    imagem.addEventListener("mouseenter", () => {
+        imagem.style.transform = "translateY(-8px)";
+    });
+
+    imagem.addEventListener("mouseleave", () => {
+        imagem.style.transform = "translateY(0)";
+    });
+
+});
