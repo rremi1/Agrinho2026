@@ -156,3 +156,17 @@ section{
 
     font-style: italic;
 }
+
+.clique{
+    display: block;
+
+    margin-top: 8px;
+
+    font-size: 14px;
+
+    color: #3d235c;
+
+    font-style: italic;
+
+    opacity: 0.8;
+}
