@@ -1,72 +1,105 @@
 body{
     margin: 0;
+    background: #efefef;
     font-family: Georgia, serif;
-    background: #e9e9e9;
 }
 
-.container{
-    width: 80%;
-    margin: 50px auto;
-    background: #3b1364;
-    padding: 30px;
+/* CAIXA PRINCIPAL */
+.caixa{
+    width: 700px;
+    margin: 80px auto;
+    background: #d9b5ef;
+    border: 5px solid #4d1b74;
+}
+
+/* TOPO */
+.topo{
+    background: #120d4f;
+    padding: 20px;
     text-align: center;
 }
 
-h1{
-    background: #160d4b;
-    color: #d7b0ff;
-    padding: 20px;
-    margin-top: 0;
+.topo h1{
+    color: #d7b7ff;
+    margin: 0;
+    font-size: 42px;
+    font-weight: normal;
 }
 
-.cards{
+/* CONTEÚDO */
+.conteudo{
     display: flex;
     justify-content: center;
-    gap: 60px;
-    margin-top: 30px;
+    gap: 80px;
+    padding: 40px;
 }
 
+/* CARD */
 .card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
 }
 
+/* IMAGEM */
 .card img{
-    width: 220px;;
+    width: 220px;
     height: 140px;
     object-fit: cover;
-    border-radius: 20px;
-    border: 10px solid #b9f3e5;
+
+    border: 12px solid #bdf1e4;
+    border-radius: 25px;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
-.botao{
+/* BOTÃO */
+.card button{
     margin-top: 15px;
-    padding: 10px 25px;
-    font-size: 20px;
-    border: none;
+
     background: transparent;
-    color: #160d4b;
+    border: none;
+
+    font-size: 28px;
+    color: #120d4f;
+
     cursor: pointer;
-    transition: 0.3s;
+    font-family: Georgia, serif;
 }
 
-.botao:hover{
-    transform: scale(1.05);
+.card button:hover{
     text-decoration: underline;
 }
 
-.texto-centro{
-    margin: 40px auto 10px;
-    background: #dcdcdc;
+/* TEXTO CENTRAL */
+.texto{
     width: 320px;
-    padding: 15px;
+
+    margin: auto;
+    margin-bottom: 30px;
+
+    background: #d9d9d9;
+
     border: 2px solid gray;
-    font-size: 24px;
-    color: #160d4b;
+
+    text-align: center;
+
+    padding: 15px;
+
+    color: #120d4f;
+    font-size: 20px;
 }
 
-.secao{
-    padding: 100px 20px;
-    text-align: center;
+/* RODAPÉ */
+.rodape{
+    background: #120d4f;
+    color: white;
+
+    padding: 10px 20px;
+
+    font-size: 14px;
+}
+
+/* SEÇÕES */
+section{
+    height: 500px;
+    padding: 50px;
 }
