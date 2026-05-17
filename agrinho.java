@@ -4,7 +4,7 @@ function irParaSecao(id){
         behavior: "smooth"
     });
 
-}
+
 
 <div class="card">
 
@@ -34,3 +34,4 @@ function irParaSecao(id){
     </p>
 
 </div>
+}
