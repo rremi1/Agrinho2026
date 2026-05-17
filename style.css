@@ -144,11 +144,15 @@ section{
 }
 
 .clique{
-    margin-top: 5px;
+    display: block;
 
-    font-size: 15px;
+    margin-top: 8px;
 
-    color: #4d1b74;
+    font-size: 14px;
+
+    color: #3d235c;
+
+    opacity: 0.8;
 
     font-style: italic;
 }
