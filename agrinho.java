@@ -1,12 +1,9 @@
 function irParaSecao(id){
 
-    // pega a seção pelo ID
-    const secao = document.getElementById(id);
-
     // rolagem suave até a seção
-    secao.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
+    window.scrollTo({
+        top: document.getElementById(id).offsetTop,
+        behavior: "smooth"
     });
 
 }
@@ -14,7 +11,7 @@ function irParaSecao(id){
 
 
 /* =========================================
-   EFEITO EXTRA NOS BOTÕES
+   EFEITO NOS BOTÕES
 ========================================= */
 
 const botoes = document.querySelectorAll(".card button");
@@ -34,7 +31,7 @@ botoes.forEach((botao) => {
 
 
 /* =========================================
-   EFEITO EXTRA NAS IMAGENS
+   EFEITO NAS IMAGENS
 ========================================= */
 
 const imagens = document.querySelectorAll(".card img");
