@@ -142,3 +142,13 @@ section{
 
     background: white;
 }
+
+.clique{
+    margin-top: 5px;
+
+    font-size: 15px;
+
+    color: #4d1b74;
+
+    font-style: italic;
+}
