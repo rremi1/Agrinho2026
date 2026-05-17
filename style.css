@@ -4,15 +4,14 @@ body{
     font-family: Georgia, serif;
 }
 
-/* CAIXA PRINCIPAL */
 .caixa{
-    width: 700px;
-    margin: 80px auto;
+    width: 100%;
+  min-height: 100vh;
     background: #d9b5ef;
     border: 5px solid #4d1b74;
+    box-sizing: border-box;
 }
 
-/* TOPO */
 .topo{
     background: #120d4f;
     padding: 20px;
