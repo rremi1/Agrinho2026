@@ -79,19 +79,16 @@ body{
 
 /* BOTÃO */
 .card button{
-    margin-top: 15px;
-
+    display: block;
+    margin: 15px auto 0 auto;
     background: transparent;
     border: none;
-
     font-size: 28px;
     color: #120d4f;
-
     cursor: pointer;
-
     font-family: Georgia, serif;
-
     transition: 0.3s;
+    text-align: center;
 }
 
 .card button:hover{
