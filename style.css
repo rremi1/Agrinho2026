@@ -43,6 +43,7 @@ body{
 
 /* CONTEÚDO */
 .conteudo{
+    margin-top: 140px;
     flex: 1;
 
     display: flex;
