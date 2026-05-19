@@ -106,7 +106,7 @@ body{
 
 /* TEXTO CENTRAL */
 .texto{
-    width: 320px;
+    width: 500px;
 
     margin: 20px auto 40px;
 
@@ -120,7 +120,7 @@ body{
     padding: 15px;
 
     color: #120d4f;
-    font-size: 20px;
+    font-size: 28px;
 
     box-shadow: 0 3px 8px rgba(0,0,0,0.2);
 }
