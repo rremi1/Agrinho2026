@@ -231,3 +231,12 @@ body{
     font-size: 18px;
 }
 
+@media(max-width: 768px){
+    .conteudo{
+        flex-direction: column;
+    }
+    .card img{
+        width: 280px;
+        height: 180px;
+    }
+}
