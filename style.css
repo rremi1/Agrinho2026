@@ -117,12 +117,6 @@ body{
     box-shadow: 0 3px 8px rgba(0,0,0,0.2);
 }
 
-.subtitulo{
-    color: white;
-    margin-top: 10px;
-    font-size;
-}
-
 /* RODAPÉ */
 .rodape{
     background: #120d4f;
@@ -206,4 +200,10 @@ body{
     text-decoration: none;
     color: #120d4f;
     font-size: 20px;
+}
+
+.subtitulo{
+    color: white;
+    margin-top: 10px;
+    font-size;
 }
