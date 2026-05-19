@@ -17,7 +17,6 @@ body{
 
 /* CAIXA PRINCIPAL */
 .caixa{
-    padding-top: 120px;
     width: 100%;
     min-height: 100vh;
 
@@ -44,7 +43,6 @@ body{
 
 /* CONTEÚDO */
 .conteudo{
-    margin-top: 140px;
     flex: 1;
 
     display: flex;
