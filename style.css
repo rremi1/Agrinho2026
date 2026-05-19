@@ -200,3 +200,29 @@ color: #120d4f;
     font-size: 22px;
     line-height: 1.8;
 }
+
+.pagina{
+    min-height: 100vh;
+    padding: 80px;
+    background: #f4e7ff;
+    color: #120d4f;
+}
+
+.pagina h1{
+    margin-bottom: 30px;
+    font-size: 45px;
+}
+
+.pagina p{
+    font-size: 24px;
+    line-height: 1.8;
+    max-width: 900px;
+}
+
+.pagina a{
+    display: inline-block;
+    margin-top: 40px;
+    text-decoration: none;
+    color: #120d4f;
+    font-size: 20px;
+}
