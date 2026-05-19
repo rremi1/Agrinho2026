@@ -9,7 +9,9 @@ html{
 }
 
 body{
-    background: #efefef;
+    background: linear-gradient(
+        to bottom, #f3e4ff, #e6d0ff;
+    );
     font-family: Georgia, serif;
 }
 
@@ -205,5 +207,6 @@ body{
 .subtitulo{
     color: white;
     margin-top: 10px;
-    font-size;
+    font-size: 18px;
 }
+
