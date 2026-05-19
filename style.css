@@ -58,6 +58,11 @@ body{
 /* CARD */
 .card{
     text-align: center;
+    transition: 0.4s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
 }
 
 /* IMAGEM */
