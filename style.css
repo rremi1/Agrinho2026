@@ -207,7 +207,7 @@ body{
 
     to{
         opacity: 1;
-        transfrom: translateY(0);
+        transform: translateY(0);
     }
 }
 
