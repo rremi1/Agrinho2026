@@ -190,6 +190,20 @@ body{
     padding: 80px;
     background: #f4e7ff;
     color: #120d4f;
+    animation: aparecer 1s ease;
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+
+    to{
+        opacity: 1;
+        transfrom: translateY(0);
+    }
 }
 
 .pagina h1{
