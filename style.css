@@ -17,6 +17,7 @@ body{
 
 /* CAIXA PRINCIPAL */
 .caixa{
+    padding-top: 120px;
     width: 100%;
     min-height: 100vh;
 
@@ -69,7 +70,8 @@ body{
 
 /* IMAGEM */
 .card img{
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 300px;
 
     object-fit: cover;
