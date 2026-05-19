@@ -184,23 +184,6 @@ section{
     font-family: Georgia, serif;
 }
 
-.secao-texto{
-    min-height: 100vh;
-padding: 80px;
-background: white;
-color: #120d4f;
-}
-
-.secao-texto h2{
-    margin-bottom: 30px;
-    font-size: 40px
-}
-
-.secao-texto p{
-    font-size: 22px;
-    line-height: 1.8;
-}
-
 .pagina{
     min-height: 100vh;
     padding: 80px;
