@@ -309,7 +309,7 @@ header {
     left: 90%;
     width: 35px;
     height: 35px;
-    animation-duration;
+    animation-duration: 17s;
 }
 
 @keyframes subir{
