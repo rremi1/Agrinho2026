@@ -360,3 +360,11 @@ hr{
 
     width: 70%;
 }
+body{
+    background:
+    linear-gradient(
+        to bottom,
+        #f7ebff,
+        #dbc3ff
+    );
+}
