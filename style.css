@@ -270,7 +270,7 @@ header {
     display: block;
     width: 25px;
     height: 25px;
-    background: rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.8);
     border-radius: 50%;
     animation: subir 15s linear infinite;
     bottom: -150px;
