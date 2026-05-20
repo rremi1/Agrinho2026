@@ -282,3 +282,46 @@ header {
     height: 40px;
     animation-duration: 12s;
 }
+
+.fundo-animado span:nth-child(2){
+    left: 30%;
+    animation-duration: 18s;
+}
+
+.fundo-animado span:nth-child(3){
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    animation-duration: 20s;
+}
+
+.fundo-animado span:nth-child(4){
+    left: 70%;
+    animation-duration: 14s;
+}
+
+.fundo-animado span:nth-child(5){
+    left: 70%;
+    animation-duration: 14s;
+}
+
+.fundo-animado span:nth-child(5){
+    left: 90%;
+    width: 35px;
+    height: 35px;
+    animation-duration;
+}
+
+@keyframes subir{
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-1200px) rotate(360deg);
+        opacity: 0;
+    }
+}
