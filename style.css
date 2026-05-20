@@ -337,6 +337,12 @@ header {
 
 body{
     animation: aparecer 0.8s ease;
+    background:
+    linear-gradient(
+        to bottom,
+        #f5e8ff,
+        #dcc0ff
+    );
 }
 
 @keyframes aparecer{
@@ -350,5 +356,4 @@ body{
         opacity: 1;
         transform: translateY(0);
     }
-
 }
