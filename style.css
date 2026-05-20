@@ -254,3 +254,31 @@ header {
     transition: 0.3s;
     z-index: 999;
 }
+
+.fundo-animado{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.fundo-animado span{
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 50%;
+    animation: subir 15s linear infinite;
+    bottom: -150px;
+}
+
+.fundo-animado span:nth-child(1){
+    left: 10%;
+    width: 40px;
+    height: 40px;
+    animation-duration: 12s;
+}
