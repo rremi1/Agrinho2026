@@ -337,13 +337,6 @@ header {
 
 body{
     animation: fade 1s ease;
-     background:
-    linear-gradient(
-        to bottom,
-        #f5e8ff,
-        #dcc0ff
-    );
-
 }
 
 @keyframes fade{
