@@ -47,3 +47,19 @@ imagens.forEach((imagem) => {
     });
 
 });
+
+const musica = document.getElementById("musica");
+
+function toggleMusic(){
+
+    if(musica.paused){
+
+        musica.play();
+
+    } else {
+
+        musica.pause();
+
+    }
+
+}
