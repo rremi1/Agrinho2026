@@ -20,7 +20,7 @@ body{
     width: 100%;
     min-height: 100vh;
 
-    background: #0f172a;
+    background: #111C33;
     border: 5px solid #000080;
 
     display: flex;
@@ -29,7 +29,7 @@ body{
 
 /* TOPO */
 .topo{
-    background: rgba(15,23,42,0.7);
+    background: #0B1220;
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255,255,255,0.08);
     padding: 25px;
@@ -40,7 +40,7 @@ body{
     color: #f8fafc;
     font-size: 42px;
     font-weight: normal;
-    text-shadow: 0 0 10px rgba(196,181,253,0.4);
+    text-shadow: 0 0 10px rgba(34, 65, 108, 0.4);
 }
 
 /* CONTEÚDO */
@@ -104,7 +104,7 @@ body{
     background: transparent;
     border: none;
     font-size: 28px;
-    color: #f8fafc;
+    color: #1E3A8A;
     cursor: pointer;
     font-family: Georgia, serif;
     transition: 0.3s;
@@ -112,7 +112,7 @@ body{
 }
 
 .card button:hover{
-     background: #2563eb;
+     background: #3B82F6;
     transform: scale(1.05);
     text-decoration: underline;
 }
@@ -165,7 +165,7 @@ body{
 
     font-size: 14px;
 
-    color: #571919;
+    color: #ffffff;
 
     opacity: 0.8;
 
@@ -194,7 +194,7 @@ body{
     border-radius: 12px;
     text-align: center;
     padding: 15px;
-    color: #f8fafc;
+    color: #E5E7EB;
     font-size: 20px;
     box-shadow: 0 3px 8px rgba(0,0,0,0.2);
     cursor: pointer;
