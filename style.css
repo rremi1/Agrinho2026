@@ -37,10 +37,10 @@ body{
 }
 
 .topo h1{
-    color: #e0e7ff;
+    color: #f8fafc;
     font-size: 42px;
     font-weight: normal;
-    text-shadow: 0 0 10px rgba(196,181,253,0.6);
+    text-shadow: 0 0 10px rgba(196,181,253,0.4);
 }
 
 /* CONTEÚDO */
