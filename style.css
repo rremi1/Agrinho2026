@@ -339,7 +339,7 @@ header {
 }
 
 body{
-    animation: fade 1s ease;
+    animation: fade 2s ease;
 }
 
 @keyframes fade{
