@@ -187,12 +187,12 @@ body{
 .texto{
     width: 320px;
     margin: 20px auto 40px;
-    background: #d9d9d9;
-    border: 2px solid gray;
+    background:  rgba(255,255,255,0.08);
+      border:1px solid rgba(255,255,255,0.2);
     border-radius: 12px;
     text-align: center;
     padding: 15px;
-    color: #120d4f;
+    color: #f8fafc;
     font-size: 20px;
     box-shadow: 0 3px 8px rgba(0,0,0,0.2);
     cursor: pointer;
