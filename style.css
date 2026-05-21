@@ -206,7 +206,7 @@ body{
 .pagina{
     min-height: 100vh;
     padding: 80px;
-    background: #f4e7ff;
+    background: #0f172a;
     color: #120d4f;
     animation: aparecer 1s ease;
 }
