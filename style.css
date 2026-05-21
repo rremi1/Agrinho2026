@@ -102,12 +102,11 @@ body{
     background: transparent;
     border: none;
     font-size: 28px;
-    color: #f8fafc;
+    color: #1e3a8a;
     cursor: pointer;
     font-family: Georgia, serif;
     transition: 0.3s;
     text-align: center;
-    border-radius: 20px;
 }
 
 .card button:hover{
