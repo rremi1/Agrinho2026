@@ -138,14 +138,14 @@ body{
 
 /* RODAPÉ */
 .rodape{
-    background: #120d4f;
-    color: white;
+    background: #020617;
+    color: #cbd5e1;
 
     padding: 15px 25px;
 
     margin-top: auto;
     text-align: center;
-    border-top: 4px solid #ffffff;
+    border-top: 1px solid rgba(255,255,255,0.1);
 }
 
 .rodape p{
