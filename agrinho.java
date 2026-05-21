@@ -50,9 +50,9 @@ imagens.forEach((imagem) => {
 
 const musica = document.getElementById("musica");
 
-const botao = document.querySelector(".music-btn");
+const botao = document.getElementById("musicBtn");
 
-function toggleMusic(){
+botao.addEventListener("click", () => {
 
     if(musica.paused){
 
@@ -68,4 +68,4 @@ function toggleMusic(){
 
     }
 
-}
+});
