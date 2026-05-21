@@ -413,3 +413,37 @@ body{
     box-shadow:
     0 12px 25px rgba(37,99,235,0.35);
 }
+.music-btn{
+    position: fixed;
+
+    bottom: 25px;
+    right: 25px;
+
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    color: white;
+
+    padding: 14px 22px;
+
+    border-radius: 20px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    z-index: 999;
+}
+
+.music-btn:hover{
+    transform: translateY(-5px);
+
+    background: #2563EB;
+
+    box-shadow: 0 10px 25px rgba(37,99,235,0.4);
+}
