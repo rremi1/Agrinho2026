@@ -400,14 +400,6 @@ body {
 .music-btn:active {
   transform: scale(0.98);
 }
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  gap: 10px;
-  background: #f5f7fa;
-}
 @keyframes pulse {
   0% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4); }
   70% { box-shadow: 0 0 0 12px rgba(37, 99, 235, 0); }
