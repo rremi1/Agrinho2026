@@ -10,10 +10,10 @@ html{
 
 body{
     background: linear-gradient(
-        to bottom, #1eff61, #781313,
+        to bottom,   #0f172a,
+        #1e293b
     );
-    font-family: Georgia, serif;
-}
+    font-family: 'Poppins', sans-serif;
 
 /* CAIXA PRINCIPAL */
 .caixa{
