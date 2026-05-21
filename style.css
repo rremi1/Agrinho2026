@@ -371,21 +371,6 @@ body{
 
     animation: fade 2s ease;
 }
-.music-btn {
-  background: #2563EB;
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 12px;
-
-  transition: all 0.3s ease;
-}
-
-.music-btn:hover {
-  transform: translateY(-4px);
-  background: #3B82F6;
-}
-
 /* BOTÃO MÚSICA */
 
 .music-btn{
