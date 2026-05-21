@@ -339,10 +339,6 @@ header {
     }
 }
 
-body{
-    animation: fade 2s ease;
-}
-
 @keyframes fade{
 
     from{
@@ -365,19 +361,16 @@ hr{
     width: 70%;
 }
 body{
-    background:
-    linear-gradient(
+    background: linear-gradient(
         to bottom,
-         #0f172a,
+        #0f172a,
         #1e293b
     );
-}
-}
-body {
-  font-family: Arial, sans-serif;
-  background: #f5f7fa;
-}
 
+    font-family: 'Poppins', sans-serif;
+
+    animation: fade 2s ease;
+}
 .music-btn {
   background: #2563EB;
   color: white;
