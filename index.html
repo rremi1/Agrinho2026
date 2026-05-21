@@ -71,17 +71,16 @@
     <span></span>
     <span></span>
 </div>
- <button onclick="document.getElementById('music').play()">
-    ▶ Tocar música
+  <button class="music-btn" onclick="document.getElementById('music').play()">
+    ▶ Tocar Música
   </button>
 
-  <button onclick="document.getElementById('music').pause()">
+  <button class="music-btn pause" onclick="document.getElementById('music').pause()">
     ⏸ Pausar
   </button>
 
   <audio id="music" loop>
     <source src="lofi.mp3" type="audio/mpeg">
   </audio>
-</audio>
 </body>
 </html>

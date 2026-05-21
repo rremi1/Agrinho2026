@@ -370,4 +370,39 @@ body{
          #0f172a,
         #1e293b
     );
-}}
+}
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+}
+
+/* botão principal */
+.music-btn {
+  background: linear-gradient(135deg, #3B82F6, #60A5FA);
+  border: none;
+  color: white;
+  padding: 12px 22px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 15px rgba(59, 130, 246, 0.3);
+}
+
+/* efeito hover */
+.music-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.4);
+}
+
+/* botão pause diferente */
+.music-btn.pause {
+  background: linear-gradient(135deg, #64748B, #94A3B8);
+  box-shadow: 0 6px 15px rgba(100, 116, 139, 0.3);
+}
+
+.music-btn.pause:hover {
+  box-shadow: 0 10px 20px rgba(100, 116, 139, 0.4);
+}
