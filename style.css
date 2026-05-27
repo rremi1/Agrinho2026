@@ -147,15 +147,16 @@ body{
     transform: scale(1.03);
 
     box-shadow:
-    0 0 30px rgba(147,197,253,0.6);
+  0 0 30px rgba(110,231,183,0.5);
 }
 
 /* BOTÕES */
 
 .card button{
-    margin-top: 20px;
+    display: block;
+    margin-top: 20px auto 0 auto;
 
-    background: #2563eb;
+    background: #059669;
 
     border: none;
 
