@@ -1,86 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Agrinho 2026</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    <div class="caixa">
 
-        <div class="topo">
-            <h1>Semeando Futuros ♡</h1>
-             <p class="subtitulo">
-        Cultivando consciência para um futuro sustentável 🌱
-    </p>
-        </div>
+    <!-- FUNDO ANIMADO -->
+    <div class="fundo-animado">
 
-        <div class="conteudo">
-
-            <!-- CARD MEIO AMBIENTE -->
-            <div class="card">
-
-                <img src="img/meioambiente.png" alt="Meio Ambiente">
-
-                <button onclick="window.location.href='meioambiente.html'">
-                    Meio Ambiente
-                </button>
-                <span class="clique">
-    (clique para saber mais)
-</span>
-
-            </div>
-
-            <!-- CARD PRODUÇÃO -->
-            <div class="card">
-
-                <img src="img/produção.png" alt="Produção">
-
-                <button onclick="window.location.href='producao.html'">
-                    Produção
-                </button>
-                <span class="clique">
-    (clique para saber mais)
-</span>
-
-            </div>
-
-        </div>
-
-        <button class="texto" 
-        onclick="window.location.href='equilibrio.html'">
-            Equilíbrio entre produção<br>
-            e meio ambiente
-        </button>
-
-        <div class="rodape">
-            <p>Instagram → seu instagram</p>
-            <p>GitHub → seu github</p>
-            <p>Sustentabilidade é cuidar do presente pensando no futuro.</p>
-        </div>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
 
     </div>
 
+    <!-- CAIXA -->
+    <div class="caixa">
+
+        <!-- TOPO -->
+        <header class="topo">
+
+            <h1>Semeando Futuro ♡</h1>
+
+            <p class="subtitulo">
+                Cultivando consciência para um mundo sustentável 🌱
+            </p>
+
+        </header>
+
+        <!-- CONTEÚDO -->
+        <main class="conteudo">
+
+            <!-- CARD 1 -->
+            <div class="card">
+
+                <img src="meioambiente.jpg" alt="Meio Ambiente">
+
+                <button onclick="window.location.href='meioambiente.html'">
+
+                    Meio Ambiente
+
+                </button>
+
+                <span class="clique">
+                    clique para saber mais
+                </span>
+
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="card">
+
+                <img src="producao.jpg" alt="Produção">
+
+                <button onclick="window.location.href='producao.html'">
+
+                    Produção
+
+                </button>
+
+                <span class="clique">
+                    clique para saber mais
+                </span>
+
+            </div>
+
+        </main>
+
+        <!-- BOTÃO CENTRAL -->
+        <button class="botao-equilibrio"
+            onclick="window.location.href='equilibrio.html'">
+
+            Equilíbrio entre Produção e Meio Ambiente
+
+        </button>
+
+        <!-- RODAPÉ -->
+        <footer class="rodape">
+
+            <p>
+                “Sustentabilidade é cuidar do presente pensando no futuro.”
+            </p>
+
+            <p>
+                🌱 Projeto Agrinho 2026 • Renatha
+            </p>
+
+        </footer>
+
+    </div>
+
+    <!-- BOTÃO MÚSICA -->
+    <button class="music-btn" id="musicBtn">
+
+        🎵 Música
+
+    </button>
+
+    <!-- ÁUDIO -->
+    <audio id="musica" loop>
+
+        <source src="musica.mp3" type="audio/mpeg">
+
+    </audio>
+
     <script src="script.js"></script>
-    <div class="fundo-animado">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-</div>
- <button class="music-btn" onclick="toggleMusic()">
 
-    🎵 Música
-
-</button>
-
-<audio id="musica" loop>
-
-    <source src="Pufino - Whistle (freetouse.com).mp3" type="audio/mpeg">
-<script src="script.js"></script>
-</audio>
 </body>
+
 </html>
