@@ -207,10 +207,10 @@ body{
     border-radius: 18px;
 
     background:
-    rgba(255,255,255,0.08);
+    rgba(255,255,255,0.06);
 
     border:
-    1px solid rgba(255,255,255,0.15);
+    1px solid rgba(255,255,255,0.1);
 
     color: white;
 
@@ -230,13 +230,12 @@ body{
     transform: scale(1.04);
 
     background:
-    rgba(255,255,255,0.12);
-}
+   rgba(16,185,129,0.2);
 
 /* RODAPÉ */
 
 .rodape{
-    background: #020617;
+    background: #07130d;
 
     padding: 20px;
 
@@ -249,7 +248,7 @@ body{
 .rodape p{
     margin: 8px 0;
 
-    color: #cbd5e1;
+    color: #d1fae5;
 }
 
 /* BOTÃO MÚSICA */
@@ -261,12 +260,12 @@ body{
     right: 25px;
 
     background:
-    rgba(255,255,255,0.08);
+    rgba(255,255,255,0.06);
 
     backdrop-filter: blur(10px);
 
     border:
-    1px solid rgba(255,255,255,0.15);
+    1px solid rgba(255,255,255,0.1);
 
     color: white;
 
