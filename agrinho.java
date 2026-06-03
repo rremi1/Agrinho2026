@@ -5,12 +5,9 @@ document.getElementById("btn").addEventListener("click", () => {
         behavior:"smooth"
     });
 });
-fetch("https://api.exemplo.com/dados")
-const socket = new WebSocket("wss://seuservidor.com");
+let arvores = 1000;
 
-socket.onmessage = (event) => {
-
-    const dados = JSON.parse(event.data);
-
-    document.getElementById("arvores").innerText = dados.arvores;
-};
+setInterval(() => {
+    arvores += Math.floor(Math.random() * 20);
+    document.getElementById("arvores").innerText = arvores;
+}, 1000);
