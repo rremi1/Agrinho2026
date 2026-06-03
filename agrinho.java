@@ -5,6 +5,7 @@ document.getElementById("btn").addEventListener("click", () => {
         behavior:"smooth"
     });
 });
+fetch("https://api.exemplo.com/dados")
 const socket = new WebSocket("wss://seuservidor.com");
 
 socket.onmessage = (event) => {
