@@ -234,7 +234,7 @@ body{
 
     background:
    rgba(16,185,129,0.2);
-
+}
 /* RODAPÉ */
 
 .rodape{
@@ -255,7 +255,8 @@ body{
 
 .rodape p{
     width: 100%
-    color: #d1fae5;
+    margin: 9px 0;
+
     text-align: center;
 }
 
