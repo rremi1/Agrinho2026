@@ -1,125 +1,419 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta charset="UTF-8">
+<title>Agrinho 2026 - Agro Forte, Futuro Sustentável</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <title>Agrinho 2026</title>
+<style>
 
-    <link rel="stylesheet" href="style.css">
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+html{
+    scroll-behavior:smooth;
+}
 
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(180deg,#102A43,#1565C0);
+    color:white;
+    overflow-x:hidden;
+}
+
+/* MENU */
+
+nav{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+
+    padding:20px;
+
+    background:rgba(0,0,0,.15);
+    backdrop-filter:blur(10px);
+
+    position:sticky;
+    top:0;
+
+    z-index:999;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#FFD54F;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+.hero h1{
+    font-size:70px;
+    color:#FFD54F;
+
+    text-shadow:
+    0 0 25px rgba(255,213,79,.3);
+}
+
+.hero p{
+    max-width:800px;
+    margin-top:20px;
+    font-size:20px;
+}
+
+.btn{
+    margin-top:30px;
+
+    background:#FFD54F;
+    color:#102A43;
+
+    border:none;
+
+    padding:15px 30px;
+
+    border-radius:30px;
+
+    font-size:18px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+}
+
+/* SEÇÕES */
+
+section{
+    padding:90px 20px;
+}
+
+.titulo{
+    text-align:center;
+    font-size:45px;
+    margin-bottom:20px;
+    color:#FFD54F;
+}
+
+.texto{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+}
+
+/* CARDS */
+
+.cards{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+
+    gap:35px;
+}
+
+.card{
+    width:320px;
+
+    background:
+    rgba(255,255,255,.08);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    text-align:center;
+
+    border:
+    1px solid rgba(255,255,255,.15);
+
+    opacity:0;
+    transform:translateY(50px);
+
+    transition:
+    opacity .8s ease,
+    transform .8s ease,
+    .4s;
+}
+
+.card.mostrar{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.icone{
+    font-size:60px;
+}
+
+.card h3{
+    margin:15px 0;
+    color:#FFD54F;
+}
+
+/* CONTADOR */
+
+.contador{
+    text-align:center;
+}
+
+.contador h2{
+    font-size:80px;
+    color:#FFD54F;
+}
+
+/* BANNER */
+
+.banner{
+    background:
+    linear-gradient(
+        135deg,
+        #2E7D32,
+        #4FC3F7
+    );
+
+    text-align:center;
+}
+
+.banner h2{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#081C2D;
+
+    text-align:center;
+
+    padding:40px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    nav{
+        flex-wrap:wrap;
+    }
+
+    .titulo{
+        font-size:32px;
+    }
+
+    .contador h2{
+        font-size:55px;
+    }
+
+}
+
+</style>
 </head>
-
 <body>
 
-    <!-- FUNDO ANIMADO -->
-    <div class="fundo-animado">
+<nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#campo">Campo</a>
+    <a href="#cidade">Cidade</a>
+    <a href="#sustentabilidade">Sustentabilidade</a>
+</nav>
 
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+<section class="hero">
 
-    </div>
+    <h1>🌱 Agrinho 2026</h1>
 
-    <!-- CAIXA -->
-    <div class="caixa">
+    <p>
+        Agro Forte, Futuro Sustentável:
+        equilíbrio entre produção e meio ambiente.
+        Construindo um futuro melhor através da educação,
+        inovação e preservação da natureza.
+    </p>
 
-        <!-- TOPO -->
-        <header class="topo">
+    <button class="btn" id="explorar">
+        Explorar Projeto
+    </button>
 
-            <h1>Semeando Futuro ♡</h1>
+</section>
 
-            <p class="subtitulo">
-                Cultivando consciência para um mundo sustentável 🌱
-            </p>
+<section id="sobre">
 
-        </header>
+    <h2 class="titulo">Sobre o Projeto</h2>
 
-        <!-- CONTEÚDO -->
-        <main class="conteudo">
+    <p class="texto">
+        O Agrinho promove a conscientização sobre a importância
+        do campo, da sustentabilidade e da tecnologia para
+        garantir qualidade de vida para toda a sociedade.
+    </p>
 
-            <!-- CARD 1 -->
-            <div class="card">
+</section>
 
-                <img src="img/meioambiente.png" alt="Meio Ambiente">
+<section>
 
-                <button onclick="window.location.href='meioambiente.html'">
+    <h2 class="titulo">Temas Principais</h2>
 
-                    Meio Ambiente
+    <div class="cards">
 
-                </button>
-
-                <span class="clique">
-                    clique para saber mais
-                </span>
-
-            </div>
-
-            <!-- CARD 2 -->
-            <div class="card">
-
-                <img src="img/produção.png" alt="Produção">
-
-                <button onclick="window.location.href='producao.html'">
-
-                    Produção
-
-                </button>
-
-                <span class="clique">
-                    clique para saber mais
-                </span>
-
-            </div>
-
-        </main>
-
-        <!-- BOTÃO CENTRAL -->
-        <button class="botao-equilibrio"
-            onclick="window.location.href='equilibrio.html'">
-
-            Equilíbrio entre Produção e Meio Ambiente
-
-        </button>
-
-        <!-- RODAPÉ -->
-        <div class="rodape">
+        <div class="card" id="campo">
+            <div class="icone">🌾</div>
+            <h3>Campo</h3>
 
             <p>
-                “Sustentabilidade é cuidar do presente pensando no futuro.”
+                Produção responsável e preservação ambiental.
             </p>
+        </div>
+
+        <div class="card" id="cidade">
+            <div class="icone">🏙️</div>
+            <h3>Cidade</h3>
 
             <p>
-              Desenvolvido por Renatha Miersva 🌱
+                Tecnologia e inovação conectadas ao agro.
             </p>
+        </div>
 
+        <div class="card" id="sustentabilidade">
+            <div class="icone">♻️</div>
+            <h3>Sustentabilidade</h3>
+
+            <p>
+                Produzir hoje preservando o amanhã.
+            </p>
         </div>
 
     </div>
 
-    <!-- BOTÃO MÚSICA -->
-    <button class="music-btn" id="musicBtn">
+</section>
 
-        🎵 Música
+<section class="contador">
 
-    </button>
+    <h2 id="numero">0</h2>
 
-    <!-- ÁUDIO -->
-    <audio id="musica" loop>
+    <p>Árvores preservadas simbolicamente</p>
 
-        <source src="Pufino - Whistle (freetouse.com).mp3" type="audio/mpeg">
+</section>
 
-    </audio>
+<section class="banner">
 
-    <script src="script.js"></script>
+    <h2>🌎 Campo e Cidade Crescem Juntos</h2>
+
+    <p>
+        A união entre agricultura, tecnologia e educação
+        constrói um futuro sustentável.
+    </p>
+
+</section>
+
+<footer>
+    <h3>Agrinho 2026</h3>
+    <p>Projeto Educacional</p>
+</footer>
+
+<script>
+
+/* BOTÃO */
+
+const botao = document.getElementById("explorar");
+
+botao.addEventListener("click", () => {
+
+    botao.textContent = "Projeto Explorado ✔";
+
+    document
+        .getElementById("sobre")
+        .scrollIntoView({
+            behavior:"smooth"
+        });
+
+});
+
+/* CONTADOR */
+
+const numero = document.getElementById("numero");
+
+let valor = 0;
+
+const contador = setInterval(() => {
+
+    valor += 10;
+
+    numero.textContent = valor;
+
+    if(valor >= 1000){
+        clearInterval(contador);
+    }
+
+},20);
+
+/* ANIMAÇÃO DOS CARDS */
+
+const cards = document.querySelectorAll(".card");
+
+const observer = new IntersectionObserver((entries)=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+            entry.target.classList.add("mostrar");
+        }
+
+    });
+
+});
+
+cards.forEach(card=>{
+    observer.observe(card);
+});
+
+/* MENSAGEM DE BOAS-VINDAS */
+
+window.addEventListener("load",()=>{
+
+    console.log("Agrinho 2026 carregado com sucesso!");
+
+});
+
+</script>
 
 </body>
-
 </html>
