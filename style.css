@@ -239,10 +239,13 @@ body{
 
 .rodape{
     background: #07130d;
-
     padding: 20px;
-
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
 
     border-top:
     1px solid rgba(255,255,255,0.08);
@@ -250,8 +253,8 @@ body{
 
 .rodape p{
     margin: 8px 0;
-    text-align: center;
     color: #d1fae5;
+    text-align: center;
 }
 
 /* BOTÃO MÚSICA */
