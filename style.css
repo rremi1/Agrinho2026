@@ -159,7 +159,7 @@ body{
 
     margin-top: 20px;
 
-    background: #059669;
+    background: #2E7D32;
 
     border: none;
 
@@ -179,7 +179,7 @@ body{
 .card button:hover{
     transform: scale(1.05);
 
-    background: #10b981;
+    background: #66BB6A;
 }
 
 /* TEXTO CLIQUE */
