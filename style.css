@@ -105,10 +105,9 @@ body{
     align-items: center;
     text-align: center;
 
-    background:
-    rgba(255,255,255,0.08);
+    background: #1b4332;
 
-    backdrop-filter: blur(12px);
+    backdrop-filter: none;
 
     border:
     1px solid rgba(255,255,255,0.15);
