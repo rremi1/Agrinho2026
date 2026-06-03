@@ -238,13 +238,15 @@ body{
 /* RODAPÉ */
 
 .rodape{
+    width: 100%;
     background: #07130d;
-    padding: 20px;
-    text-align: center;
+    padding: 25px;
+    margin-top: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
 
     border-top:
