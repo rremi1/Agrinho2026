@@ -21,3 +21,7 @@ setInterval(() => {
 >
   Explorar
 </button>
+
+<section id="temas">
+  ...
+</section>
