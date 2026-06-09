@@ -225,3 +225,8 @@ section:last-of-type{
 .btn-explorar:hover{
     transform:scale(1.05);
 }
+
+.hero {
+    background: linear-gradient(180deg, #0b1320, #111c2e);
+    backdrop-filter: blur(10px);
+}
