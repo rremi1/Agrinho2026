@@ -280,15 +280,22 @@ section:last-of-type{
     padding:40px 20px;
 }
 
-.slide {
-    display: none;
-    max-width: 700px;
-    margin: auto;
-    animation: fade 0.6s ease-in;
+.slide{
+    display:none;
+
+    width:100%;
+    max-width:700px;
+
+    margin:auto;
+
+    animation:fade .6s ease-in;
+
+    position:absolute;
 }
 
-.slide.ativo {
-    display: block;
+.slide.ativo{
+    display:block;
+    position:relative;
 }
 
 .slide h2 {
