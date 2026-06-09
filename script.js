@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-
+document.getElementById("historia").classList.add("ativo");
     // BOTÃO
     const btn = document.getElementById("btn");
     const sobre = document.getElementById("sobre");
