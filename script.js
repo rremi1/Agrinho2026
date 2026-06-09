@@ -60,8 +60,3 @@ function atualizarContadores() {
 
 setInterval(atualizarContadores, 2000);
 });
-document.querySelectorAll(".ponto").forEach(ponto => {
-    ponto.addEventListener("click", () => {
-        alert(ponto.innerText + " é essencial para o desenvolvimento do Brasil!");
-    });
-});
