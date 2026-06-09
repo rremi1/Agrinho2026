@@ -1,22 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
 document.getElementById("historia").classList.add("ativo");
     // BOTÃO
-    const btn = document.getElementById("btn");
-    const sobre = document.getElementById("sobre");
+   const btn = document.getElementById("btn");
+const temas = document.getElementById("temas");
 
-   if(btn){
-
-btn.addEventListener("click",()=>{
-
-document
-.getElementById("temas")
-.scrollIntoView({
-
-behavior:"smooth"
-
+if (btn && temas) {
+btn.addEventListener("click", () => {
+temas.scrollIntoView({
+behavior: "smooth"
 });
-
 });
+}
 
 }
 
