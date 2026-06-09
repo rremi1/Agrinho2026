@@ -83,6 +83,7 @@ section{
     margin: 0;
     padding:80px 20px;
     text-align:center;
+    scroll-margin-top: 80px;
 }
 
 body {
@@ -92,6 +93,7 @@ body {
 h2{
     color:#fbbf24;
     margin-bottom:20px;
+    letter-spacing: 1px;
 }
 
 /* CARDS */
