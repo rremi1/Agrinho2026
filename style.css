@@ -270,14 +270,13 @@ section:last-of-type{
 }
 
 .historia{
-    min-height: 260px;
     text-align:center;
 
     padding:40px 20px;
 
     position:relative;
 
-    min-height:300px;
+    min-height:260px;
 }
 
 .slide{
