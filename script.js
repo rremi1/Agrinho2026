@@ -4,21 +4,6 @@ const dadosIBGE = {
     alimentos: 300000000
 };
 
-
-function atualizar() {
-
-    arvores += Math.floor(Math.random() * 10);
-    agua += Math.floor(Math.random() * 50);
-    alimentos += Math.floor(Math.random() * 5);
-
-    document.getElementById("arvores").innerText = arvores;
-    document.getElementById("agua").innerText = agua;
-    document.getElementById("alimentos").innerText = alimentos;
-
-    atualizarGrafico();
-}
-
-setInterval(atualizar, 2000);
 let atual = 1;
 
 window.proximoSlide = function () {
