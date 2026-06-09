@@ -36,6 +36,9 @@ nav h2{
 }
 
 /* HERO */
+.hero{
+min-height:100vh;
+}
 
 .hero-content{
     text-align:center;
@@ -226,7 +229,6 @@ section:last-of-type{
 }
 
 .hero {
-    min-height:100vh;
     background: radial-gradient(circle at top, #1f2937, #0b1320);
     position: relative;
     overflow: hidden;
@@ -337,14 +339,4 @@ section:last-of-type{
 }
 #sobre {
     margin-bottom: 20px;
-}
-section {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.8s ease;
-}
-
-section.ativo {
-    opacity: 1;
-    transform: translateY(0);
 }
