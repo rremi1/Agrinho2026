@@ -347,14 +347,9 @@ section:last-of-type{
 #sobre {
     margin-bottom: 20px;
 }
-/* impede animação da seção história */
-section:not(#historia){
-    opacity:0;
-    transform:translateY(40px);
-    transition:.8s;
-}
 
-section.ativo{
-    opacity:1;
-    transform:none;
+/* impede animação da seção história */
+#historia{
+    opacity:1 !important;
+    transform:none !important;
 }
