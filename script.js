@@ -1,64 +1,107 @@
 document.addEventListener("DOMContentLoaded", () => {
-document.getElementById("historia").classList.add("ativo");
-    // BOTÃO
-   const btn = document.getElementById("btn");
+
+document.getElementById("historia")?.classList.add("ativo");
+
+// BOTÃO
+
+const btn = document.getElementById("btn");
 const temas = document.getElementById("temas");
 
 if (btn && temas) {
+
 btn.addEventListener("click", () => {
+
 temas.scrollIntoView({
 behavior: "smooth"
 });
+
 });
-}
 
 }
 
-    // HISTÓRIA
-    let atual = 1;
+// HISTÓRIA
 
-    window.proximoSlide = function () {
-        const atualSlide = document.getElementById("slide" + atual);
-        if (atualSlide) atualSlide.classList.remove("ativo");
+let atual = 1;
 
-        atual++;
+window.proximoSlide = function () {
 
-        const proximoSlide = document.getElementById("slide" + atual);
-        if (proximoSlide) proximoSlide.classList.add("ativo");
-    };
+const atualSlide =
+document.getElementById("slide" + atual);
 
-    // CONTADORES
-    let arvores = 9900000;
-    let agua = 70;
-    let alimentos = 300000000;
+if (atualSlide) {
+atualSlide.classList.remove("ativo");
+}
 
-    const arvoresEl = document.getElementById("arvores");
-    const aguaEl = document.getElementById("agua");
-    const alimentosEl = document.getElementById("alimentos");
+atual++;
 
-    function formatar(n) {
-        return n.toLocaleString("pt-BR");
-    }
+const proximo =
+document.getElementById("slide" + atual);
 
-    setInterval(() => {
-        arvores += Math.floor(Math.random() * 500);
-        alimentos += Math.floor(Math.random() * 50000);
+if (proximo) {
+proximo.classList.add("ativo");
+}
 
-        if (arvoresEl) arvoresEl.innerText = formatar(arvores);
-        if (aguaEl) aguaEl.innerText = agua + "%";
-        if (alimentosEl) alimentosEl.innerText = formatar(alimentos);
-    }, 2000);
+};
 
-    // SCROLL
-    const sections = document.querySelectorAll("section");
+// CONTADORES
 
-    window.addEventListener("scroll", () => {
-        sections.forEach(sec => {
-            const topo = sec.getBoundingClientRect().top;
-            if (topo < window.innerHeight - 100) {
-                sec.classList.add("ativo");
-            }
-        });
-    });
+let arvores = 9900000;
+let agua = 70;
+let alimentos = 300000000;
+
+const arvoresEl =
+document.getElementById("arvores");
+
+const aguaEl =
+document.getElementById("agua");
+
+const alimentosEl =
+document.getElementById("alimentos");
+
+function formatar(n) {
+return n.toLocaleString("pt-BR");
+}
+
+setInterval(() => {
+
+arvores +=
+Math.floor(Math.random() * 500);
+
+alimentos +=
+Math.floor(Math.random() * 50000);
+
+if (arvoresEl)
+arvoresEl.innerText =
+formatar(arvores);
+
+if (aguaEl)
+aguaEl.innerText =
+agua + "%";
+
+if (alimentosEl)
+alimentosEl.innerText =
+formatar(alimentos);
+
+}, 2000);
+
+// ANIMAÇÃO NO SCROLL
+
+const sections =
+document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+
+sections.forEach(sec => {
+
+const topo =
+sec.getBoundingClientRect().top;
+
+if (topo < window.innerHeight - 100) {
+sec.classList.add("ativo");
+}
+
+});
+
+});
 
 });
