@@ -36,25 +36,27 @@ document.addEventListener("DOMContentLoaded", () => {
     // =========================
     // CONTADORES (IMPACTO)
     // =========================
-    let arvores = 9900000;   // IBGE (florestas plantadas)
-    let agua = 70;           // % uso agricultura
-    let alimentos = 300000000; // produção agrícola
+   let arvores = 9900000;
+let agua = 70;
+let alimentos = 300000000;
 
-    const arvoresEl = document.getElementById("arvores");
-    const aguaEl = document.getElementById("agua");
-    const alimentosEl = document.getElementById("alimentos");
+const arvoresEl = document.getElementById("arvores");
+const aguaEl = document.getElementById("agua");
+const alimentosEl = document.getElementById("alimentos");
 
-    function atualizarContadores() {
+function formatarNumero(n) {
+    return n.toLocaleString("pt-BR");
+}
 
-        arvores += Math.floor(Math.random() * 1000);
-        alimentos += Math.floor(Math.random() * 50000);
+function atualizarContadores() {
 
-        if (arvoresEl) arvoresEl.innerText = arvores.toLocaleString("pt-BR");
-        if (aguaEl) aguaEl.innerText = agua + "%";
-        if (alimentosEl) alimentosEl.innerText = alimentos.toLocaleString("pt-BR");
+    arvores += Math.floor(Math.random() * 500);
+    alimentos += Math.floor(Math.random() * 50000);
 
-        atualizarGrafico();
-    }
+    if (arvoresEl) arvoresEl.innerText = formatarNumero(arvores);
+    if (aguaEl) aguaEl.innerText = agua + "%";
+    if (alimentosEl) alimentosEl.innerText = formatarNumero(alimentos);
+}
 
-    setInterval(atualizarContadores, 3000);
+setInterval(atualizarContadores, 2000);
 });
