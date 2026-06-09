@@ -11,3 +11,13 @@ setInterval(() => {
     arvores += Math.floor(Math.random() * 20);
     document.getElementById("arvores").innerText = arvores;
 }, 1000);
+
+<button
+  onClick={() => {
+    document.getElementById("temas")?.scrollIntoView({
+      behavior: "smooth",
+    });
+  }}
+>
+  Explorar
+</button>
