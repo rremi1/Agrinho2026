@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    // =========================
-    // BOTÃO EXPLORAR
-    // =========================
+    // BOTÃO
     const btn = document.getElementById("btn");
     const sobre = document.getElementById("sobre");
 
@@ -12,9 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // =========================
-    // HISTÓRIA INTERATIVA
-    // =========================
+    // HISTÓRIA
     let atual = 1;
 
     window.proximoSlide = function () {
@@ -27,9 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (proximoSlide) proximoSlide.classList.add("ativo");
     };
 
-    // =========================
     // CONTADORES
-    // =========================
     let arvores = 9900000;
     let agua = 70;
     let alimentos = 300000000;
@@ -38,24 +32,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const aguaEl = document.getElementById("agua");
     const alimentosEl = document.getElementById("alimentos");
 
-    function formatarNumero(n) {
+    function formatar(n) {
         return n.toLocaleString("pt-BR");
     }
 
-    function atualizarContadores() {
+    setInterval(() => {
         arvores += Math.floor(Math.random() * 500);
         alimentos += Math.floor(Math.random() * 50000);
 
-        if (arvoresEl) arvoresEl.innerText = formatarNumero(arvores);
+        if (arvoresEl) arvoresEl.innerText = formatar(arvores);
         if (aguaEl) aguaEl.innerText = agua + "%";
-        if (alimentosEl) alimentosEl.innerText = formatarNumero(alimentos);
-    }
+        if (alimentosEl) alimentosEl.innerText = formatar(alimentos);
+    }, 2000);
 
-    setInterval(atualizarContadores, 2000);
-
-    // =========================
-    // SCROLL ANIMAÇÃO
-    // =========================
+    // SCROLL ANIMATION (CORRETO AGORA)
     const sections = document.querySelectorAll("section");
 
     window.addEventListener("scroll", () => {
