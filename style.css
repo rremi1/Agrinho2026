@@ -305,3 +305,7 @@ section:last-of-type{
         transform: translateY(0);
     }
 }
+#graficoImpacto {
+    max-width: 400px;
+    margin: 40px auto;
+}

@@ -1,32 +1,21 @@
-document.addEventListener("DOMContentLoaded", () => {
+let arvores = 1200;
+let agua = 5000;
+let alimentos = 800;
 
-    const btn = document.getElementById("btn");
-    const sobre = document.getElementById("sobre");
+function atualizar() {
 
-    btn.addEventListener("click", () => {
-        sobre.scrollIntoView({
-            behavior: "smooth"
-        });
-    });
+    arvores += Math.floor(Math.random() * 10);
+    agua += Math.floor(Math.random() * 50);
+    alimentos += Math.floor(Math.random() * 5);
 
-});
-function animarNumero(id, final, velocidade) {
-    let el = document.getElementById(id);
-    let atual = 0;
+    document.getElementById("arvores").innerText = arvores;
+    document.getElementById("agua").innerText = agua;
+    document.getElementById("alimentos").innerText = alimentos;
 
-    let intervalo = setInterval(() => {
-        atual += Math.ceil(final / 50);
-        if (atual >= final) {
-            atual = final;
-            clearInterval(intervalo);
-        }
-        el.innerText = atual;
-    }, velocidade);
+    atualizarGrafico();
 }
 
-animarNumero("arvores", 1250, 30);
-animarNumero("agua", 5400, 30);
-animarNumero("alimentos", 820);
+setInterval(atualizar, 2000);
 let atual = 1;
 
 window.proximoSlide = function () {
@@ -42,3 +31,35 @@ window.proximoSlide = function () {
         proximoSlide.classList.add("ativo");
     }
 };
+
+const ctx = document.getElementById('graficoImpacto');
+
+const grafico = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        labels: ['Árvores', 'Água', 'Alimentos'],
+        datasets: [{
+            data: [1200, 5000, 800],
+            backgroundColor: [
+                '#22c55e',
+                '#38bdf8',
+                '#fbbf24'
+            ]
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                labels: {
+                    color: '#fff'
+                }
+            }
+        }
+    }
+});
+
+function atualizarGrafico() {
+    grafico.data.datasets[0].data = [arvores, agua, alimentos];
+    grafico.update();
+}
