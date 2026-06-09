@@ -268,16 +268,15 @@ section:last-of-type{
         text-align: center;
     }
 }
-.historia {
-     text-align:center;
 
-    min-height:350px; /* reserva espaço */
-    
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.historia{
+    text-align:center;
 
     padding:40px 20px;
+
+    position:relative;
+
+    min-height:300px;
 }
 
 .slide{
