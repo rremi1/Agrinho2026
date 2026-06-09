@@ -27,3 +27,14 @@ function animarNumero(id, final, velocidade) {
 animarNumero("arvores", 1250, 30);
 animarNumero("agua", 5400, 30);
 animarNumero("alimentos", 820);
+let atual = 1;
+
+function proximoSlide() {
+    document.getElementById("slide" + atual).classList.remove("ativo");
+    atual++;
+
+    const proximo = document.getElementById("slide" + atual);
+    if (proximo) {
+        proximo.classList.add("ativo");
+    }
+}
