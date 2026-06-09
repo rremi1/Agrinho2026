@@ -4,11 +4,21 @@ document.getElementById("historia").classList.add("ativo");
     const btn = document.getElementById("btn");
     const sobre = document.getElementById("sobre");
 
-    if (btn && sobre) {
-        btn.addEventListener("click", () => {
-            sobre.scrollIntoView({ behavior: "smooth" });
-        });
-    }
+   if(btn){
+
+btn.addEventListener("click",()=>{
+
+document
+.getElementById("temas")
+.scrollIntoView({
+
+behavior:"smooth"
+
+});
+
+});
+
+}
 
     // HISTÓRIA
     let atual = 1;
