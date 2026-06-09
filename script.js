@@ -37,32 +37,30 @@ window.proximoSlide = function () {
 
 const ctx = document.getElementById('graficoImpacto');
 
-const grafico = new Chart(ctx, {
-    type: 'doughnut',
+new Chart(ctx, {
+    type: 'bar',
     data: {
-        labels: ['Árvores', 'Água', 'Alimentos'],
+        labels: ['Florestas (ha)', 'Uso de água (%)', 'Produção agrícola (t)'],
         datasets: [{
-            data: [1200, 5000, 800],
-            backgroundColor: [
-                '#22c55e',
-                '#38bdf8',
-                '#fbbf24'
-            ]
+            label: 'Dados oficiais aproximados IBGE',
+            data: [
+                9900000,
+                70,
+                300000000
+            ],
+            backgroundColor: ['#22c55e', '#38bdf8', '#fbbf24']
         }]
     },
     options: {
         responsive: true,
         plugins: {
             legend: {
-                labels: {
-                    color: '#fff'
-                }
+                labels: { color: '#fff' }
             }
+        },
+        scales: {
+            x: { ticks: { color: '#fff' } },
+            y: { ticks: { color: '#fff' } }
         }
     }
 });
-
-function atualizarGrafico() {
-    grafico.data.datasets[0].data = [arvores, agua, alimentos];
-    grafico.update();
-}
