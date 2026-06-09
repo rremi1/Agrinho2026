@@ -1,6 +1,9 @@
-let arvores = 1200;
-let agua = 5000;
-let alimentos = 800;
+const dadosIBGE = {
+    arvores: 9900000,
+    agua: 70,
+    alimentos: 300000000
+};
+
 
 function atualizar() {
 
