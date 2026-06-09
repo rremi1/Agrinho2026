@@ -357,3 +357,8 @@ section.ativo {
     opacity: 1;
     transform: translateY(0);
 }
+/* impede animação da seção história */
+#historia{
+    opacity:1 !important;
+    transform:none !important;
+}
