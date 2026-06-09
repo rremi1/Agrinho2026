@@ -276,7 +276,7 @@ section:last-of-type{
 
     position:relative;
 
-    min-height:260px;
+    min-height:300px;
 }
 
 .slide{
@@ -348,10 +348,6 @@ section:last-of-type{
     margin-bottom: 20px;
 }
 /* impede animação da seção história */
-#historia{
-    opacity:1 !important;
-    transform:none !important;
-}
 section:not(#historia){
     opacity:0;
     transform:translateY(40px);
