@@ -60,3 +60,13 @@ function atualizarContadores() {
 
 setInterval(atualizarContadores, 2000);
 });
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+    sections.forEach(sec => {
+        const topo = sec.getBoundingClientRect().top;
+        if (topo < window.innerHeight - 100) {
+            sec.classList.add("ativo");
+        }
+    });
+});
