@@ -231,6 +231,14 @@ section:last-of-type{
     background: linear-gradient(180deg, #0b1320, #111c2e);
     backdrop-filter: blur(10px);
 }
+.hero-content {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 @media (max-width: 768px) {
     .cards {
         flex-direction: column;
