@@ -29,12 +29,16 @@ animarNumero("agua", 5400, 30);
 animarNumero("alimentos", 820);
 let atual = 1;
 
-function proximoSlide() {
-    document.getElementById("slide" + atual).classList.remove("ativo");
+window.proximoSlide = function () {
+    const atualSlide = document.getElementById("slide" + atual);
+    if (atualSlide) {
+        atualSlide.classList.remove("ativo");
+    }
+
     atual++;
 
-    const proximo = document.getElementById("slide" + atual);
-    if (proximo) {
-        proximo.classList.add("ativo");
+    const proximoSlide = document.getElementById("slide" + atual);
+    if (proximoSlide) {
+        proximoSlide.classList.add("ativo");
     }
-}
+};
