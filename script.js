@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    // BOTÃO
-    const btn = document.getElementById("btn");
-    const sobre = document.getElementById("sobre");
+   document.addEventListener("DOMContentLoaded", () => {
 
-    if (btn && sobre) {
-        btn.addEventListener("click", () => {
-            sobre.scrollIntoView({ behavior: "smooth" });
-        });
-    }
+    const btn = document.getElementById("btn");
+
+    btn.addEventListener("click", () => {
+        alert("botão funcionando!");
+    });
+
+});
 
     // HISTÓRIA
     let atual = 1;
