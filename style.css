@@ -269,9 +269,15 @@ section:last-of-type{
     }
 }
 .historia {
-    text-align: center;
-    padding: 10px 0px 60px;
-    margin-top: -60px;
+     text-align:center;
+
+    min-height:350px; /* reserva espaço */
+    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px 20px;
 }
 
 .slide {
