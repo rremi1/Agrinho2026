@@ -271,7 +271,7 @@ section:last-of-type{
         }
         to{
             opacity: 1;
-            transform: none0;
+            transform: none;
         }
     }
 
