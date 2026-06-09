@@ -365,29 +365,14 @@ section:last-of-type{
     opacity:1 !important;
     transform:none !important;
 }
-.sobre-container img{
-    width:420px;
-    max-width:90%;
-
-    border-radius:20px;
-
-    border:2px solid #2dd4bf;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.4);
-
-    animation: flutuar 4s ease-in-out infinite;
+.sobre-container{
+    overflow:hidden;
 }
 
-@keyframes flutuar{
-    0%{
-        transform:translateY(0);
-    }
+.sobre-container img{
+    transition:1s;
+}
 
-    50%{
-        transform:translateY(-12px);
-    }
-
-    100%{
-        transform:translateY(0);
-    }
+.sobre-container img:hover{
+    transform:scale(1.06);
 }
