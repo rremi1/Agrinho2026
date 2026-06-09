@@ -1,5 +1,14 @@
+document.addEventListener("DOMContentLoaded", () => {
 
-});
+    // BOTÃO
+    const btn = document.getElementById("btn");
+    const sobre = document.getElementById("sobre");
+
+    if (btn && sobre) {
+        btn.addEventListener("click", () => {
+            sobre.scrollIntoView({ behavior: "smooth" });
+        });
+    }
 
     // HISTÓRIA
     let atual = 1;
@@ -36,7 +45,7 @@
         if (alimentosEl) alimentosEl.innerText = formatar(alimentos);
     }, 2000);
 
-    // SCROLL ANIMATION (CORRETO AGORA)
+    // SCROLL
     const sections = document.querySelectorAll("section");
 
     window.addEventListener("scroll", () => {
