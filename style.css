@@ -282,19 +282,13 @@ section:last-of-type{
 .slide{
     display:none;
 
-    width:100%;
     max-width:700px;
 
-    margin:auto;
-
-    animation:fade .6s ease-in;
-
-    position:absolute;
+    margin:0 auto;
 }
 
 .slide.ativo{
     display:block;
-    position:relative;
 }
 
 .slide h2 {
