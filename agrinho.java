@@ -11,17 +11,23 @@ setInterval(() => {
     arvores += Math.floor(Math.random() * 20);
     document.getElementById("arvores").innerText = arvores;
 }, 1000);
+let agua = 5000;
+let alimentos = 500;
 
-<button
-  onClick={() => {
-    document.getElementById("temas")?.scrollIntoView({
-      behavior: "smooth",
-    });
-  }}
->
-  Explorar
-</button>
+const aguaElemento = document.getElementById("agua");
+const alimentosElemento = document.getElementById("alimentos");
 
-<a href="#temas">
-  <button>Explorar</button>
-</a>
+setInterval(() => {
+
+    agua += Math.floor(Math.random() * 50);
+    alimentos += Math.floor(Math.random() * 10);
+
+    if (aguaElemento) {
+        aguaElemento.innerText = agua;
+    }
+
+    if (alimentosElemento) {
+        alimentosElemento.innerText = alimentos;
+    }
+
+}, 1000);
