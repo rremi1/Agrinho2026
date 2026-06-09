@@ -260,7 +260,19 @@ section:last-of-type{
     }
 
     .hero h1 {
+        animation: subir 1s ease;
         font-size: 36px;
+    }
+
+    @keyframes subir{
+        from{
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to{
+            opacity: 1;
+            transform: none0;
+        }
     }
 
     .sobre-container {
