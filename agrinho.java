@@ -22,6 +22,6 @@ setInterval(() => {
   Explorar
 </button>
 
-<section id="temas">
-  ...
-</section>
+<a href="#temas">
+  <button>Explorar</button>
+</a>
