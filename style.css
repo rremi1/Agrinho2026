@@ -309,3 +309,7 @@ section:last-of-type{
     max-width: 400px;
     margin: 40px auto;
 }
+.box h3 {
+    font-size: 36px;
+    word-break: break-word;
+}
