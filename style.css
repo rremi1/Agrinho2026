@@ -366,13 +366,41 @@ section:last-of-type{
     transform:none !important;
 }
 .sobre-container{
-    overflow:hidden;
+    position:relative;
 }
 
 .sobre-container img{
-    transition:1s;
+    position:relative;
+    overflow:hidden;
 }
 
-.sobre-container img:hover{
-    transform:scale(1.06);
+.sobre-container::after{
+    content:"";
+
+    position:absolute;
+
+    width:120px;
+
+    height:500px;
+
+    background:
+    rgba(255,255,255,.15);
+
+    transform:rotate(25deg);
+
+    left:-250px;
+
+    animation: brilho 5s infinite;
+}
+
+@keyframes brilho{
+
+0%{
+left:-250px;
+}
+
+100%{
+left:120%;
+}
+
 }
