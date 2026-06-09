@@ -211,19 +211,20 @@ section:last-of-type{
     font-size:50px;
     color:#2dd4bf;
 }
-.btn-explorar{
-    display:inline-block;
-    padding:14px 30px;
-    border-radius:30px;
-    background:#2dd4bf;
-    color:#0b1320;
-    font-weight:700;
-    text-decoration:none;
-    transition:.3s;
+#btn {
+    padding: 14px 34px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #2dd4bf, #22c55e);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(45, 212, 191, 0.4);
 }
 
-.btn-explorar:hover{
-    transform:scale(1.05);
+#btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 25px rgba(45, 212, 191, 0.6);
 }
 
 .hero {
