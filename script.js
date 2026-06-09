@@ -8,9 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (btn && sobre) {
         btn.addEventListener("click", () => {
-            sobre.scrollIntoView({
-                behavior: "smooth"
-            });
+            sobre.scrollIntoView({ behavior: "smooth" });
         });
     }
 
@@ -21,52 +19,52 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.proximoSlide = function () {
         const atualSlide = document.getElementById("slide" + atual);
-        if (atualSlide) {
-            atualSlide.classList.remove("ativo");
-        }
+        if (atualSlide) atualSlide.classList.remove("ativo");
 
         atual++;
 
         const proximoSlide = document.getElementById("slide" + atual);
-        if (proximoSlide) {
-            proximoSlide.classList.add("ativo");
-        }
+        if (proximoSlide) proximoSlide.classList.add("ativo");
     };
 
     // =========================
-    // CONTADORES (IMPACTO)
+    // CONTADORES
     // =========================
-   let arvores = 9900000;
-let agua = 70;
-let alimentos = 300000000;
+    let arvores = 9900000;
+    let agua = 70;
+    let alimentos = 300000000;
 
-const arvoresEl = document.getElementById("arvores");
-const aguaEl = document.getElementById("agua");
-const alimentosEl = document.getElementById("alimentos");
+    const arvoresEl = document.getElementById("arvores");
+    const aguaEl = document.getElementById("agua");
+    const alimentosEl = document.getElementById("alimentos");
 
-function formatarNumero(n) {
-    return n.toLocaleString("pt-BR");
-}
+    function formatarNumero(n) {
+        return n.toLocaleString("pt-BR");
+    }
 
-function atualizarContadores() {
+    function atualizarContadores() {
+        arvores += Math.floor(Math.random() * 500);
+        alimentos += Math.floor(Math.random() * 50000);
 
-    arvores += Math.floor(Math.random() * 500);
-    alimentos += Math.floor(Math.random() * 50000);
+        if (arvoresEl) arvoresEl.innerText = formatarNumero(arvores);
+        if (aguaEl) aguaEl.innerText = agua + "%";
+        if (alimentosEl) alimentosEl.innerText = formatarNumero(alimentos);
+    }
 
-    if (arvoresEl) arvoresEl.innerText = formatarNumero(arvores);
-    if (aguaEl) aguaEl.innerText = agua + "%";
-    if (alimentosEl) alimentosEl.innerText = formatarNumero(alimentos);
-}
+    setInterval(atualizarContadores, 2000);
 
-setInterval(atualizarContadores, 2000);
-});
-const sections = document.querySelectorAll("section");
+    // =========================
+    // SCROLL ANIMAÇÃO
+    // =========================
+    const sections = document.querySelectorAll("section");
 
-window.addEventListener("scroll", () => {
-    sections.forEach(sec => {
-        const topo = sec.getBoundingClientRect().top;
-        if (topo < window.innerHeight - 100) {
-            sec.classList.add("ativo");
-        }
+    window.addEventListener("scroll", () => {
+        sections.forEach(sec => {
+            const topo = sec.getBoundingClientRect().top;
+            if (topo < window.innerHeight - 100) {
+                sec.classList.add("ativo");
+            }
+        });
     });
+
 });
