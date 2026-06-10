@@ -1,6 +1,6 @@
 # 🌱 Agrinho 2026
 
-Projeto desenvolvido para o programa **Agrinho 2026**, com o objetivo de apresentar conteúdos, informações e reflexões sobre a relação entre o campo, a cidade, a sustentabilidade e a inovação no agronegócio.
+Projeto desenvolvido para o programa **Agrinho 2026**, com o objetivo de apresentar conteúdos, informações e a sustentabilidade e a inovação no agronegócio.
 
 ## 📋 Sobre o Projeto
 
