@@ -7,17 +7,14 @@ document.getElementById("historia")?.classList.add("ativo");
 const btn = document.getElementById("btn");
 const temas = document.getElementById("temas");
 
-if (btn && temas) {
+btn.addEventListener("click", (e) => {
+    e.preventDefault();
 
-btn.addEventListener("click", () => {
-
-temas.scrollIntoView({
-behavior: "smooth"
+    temas.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
 });
-
-});
-
-}
 
 // HISTÓRIA
 
