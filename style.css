@@ -397,16 +397,6 @@ section:last-of-type{
         transform:translateY(0);
     }
 }
-.onda{
-height:120px;
-
-background:
-linear-gradient(
-to bottom,
-transparent,
-rgba(45,212,191,.08)
-);
-}
 #slide5{
 
 padding:40px;
