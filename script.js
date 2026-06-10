@@ -29,9 +29,7 @@ if (atualSlide) {
 atualSlide.classList.remove("ativo");
 }
 
-if (atual < 5) {
 atual++;
-}
 
 const proximo =
 document.getElementById("slide" + atual);
@@ -104,24 +102,3 @@ sec.classList.add("ativo");
 });
 
 });
-
-function voltarTopo(){
-
-window.scrollTo({
-top:0,
-behavior:"smooth"
-});
-
-atual = 1;
-
-document
-.querySelectorAll(".slide")
-.forEach(slide=>{
-slide.classList.remove("ativo");
-});
-
-document
-.getElementById("slide1")
-.classList.add("ativo");
-
-}
