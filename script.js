@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-document.getElementById("historia")?.classList.add("ativo");
+document.getElementById("slide1")?.classList.add("ativo");
 
 // BOTÃO
 
