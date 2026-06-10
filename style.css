@@ -62,6 +62,8 @@ min-height:70vh;
     padding:14px 30px;
     border:none;
     border-radius:30px;
+    position: relative;
+    transform: none;
 
     background:#2dd4bf;
     color:#0b1320;
@@ -70,6 +72,10 @@ min-height:70vh;
     cursor:pointer;
 
     transition:.3s;
+}
+
+#btn:active {
+    transform: scale(0.98); /* ou remova totalmente */
 }
 
 #btn:hover{
