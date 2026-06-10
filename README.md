@@ -16,14 +16,6 @@ A plataforma apresenta conteúdos organizados de forma intuitiva, permitindo que
 * Vercel (Deploy)
 * Inteligência Artificial
 
-## ✨ Funcionalidades
-
-* Interface responsiva para dispositivos móveis e desktops.
-* Navegação simples e intuitiva.
-* Rolagem suave entre seções.
-* Apresentação de conteúdos temáticos.
-* Design moderno e acessível.
-
 ## 🎯 Objetivo
 
 Promover conhecimento sobre a importância do agronegócio, da sustentabilidade e da integração entre campo e cidade, incentivando a conscientização e a valorização do setor agrícola.
