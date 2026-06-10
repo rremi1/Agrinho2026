@@ -397,4 +397,11 @@ section:last-of-type{
         transform:translateY(0);
     }
 }
+.links a {
+  color: #4c54af;
+  text-decoration: none;
+}
 
+.links a:hover {
+  text-decoration: underline;
+}
