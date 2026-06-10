@@ -407,22 +407,3 @@ transparent,
 rgba(45,212,191,.08)
 );
 }
-.hero::before{
-content:"🌱";
-
-position:absolute;
-
-animation: flutuar 8s infinite;
-}
-
-@keyframes flutuar{
-0%{
-transform:
-translateY(100px);
-}
-
-100%{
-transform:
-translateY(-800px);
-}
-}
