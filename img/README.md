@@ -1,34 +1,25 @@
 # 🌱 Agrinho 2026
 
-## Agro e Cidade em Harmonia
+Projeto desenvolvido para o programa **Agrinho 2026**, com o objetivo de apresentar conteúdos, informações e reflexões sobre a relação entre o campo, a cidade, a sustentabilidade e a inovação no agronegócio.
 
-O Agrinho 2026 é um projeto educativo que destaca a importância da integração entre o campo e a cidade, mostrando como a tecnologia, a sustentabilidade e a produção agrícola podem trabalhar juntas para construir um futuro mais equilibrado e responsável. 
+## 📋 Sobre o Projeto
 
-## 📖 Sobre o Projeto
+O site foi criado para proporcionar uma experiência interativa e educativa, destacando temas importantes relacionados ao desenvolvimento sustentável, à produção agrícola e à importância do agronegócio para a sociedade.
 
-O projeto foi desenvolvido com o objetivo de conscientizar os visitantes sobre a relação entre o meio rural e o urbano, incentivando reflexões sobre preservação ambiental, inovação e desenvolvimento sustentável. A proposta demonstra que o futuro depende da harmonia entre produção, natureza e tecnologia.
+A plataforma apresenta conteúdos organizados de forma intuitiva, permitindo que os visitantes explorem diferentes tópicos e compreendam melhor o impacto do campo no cotidiano das pessoas.
 
-## 🎯 Temas Abordados
+## 🚀 Tecnologias Utilizadas
 
-### 🌾 Campo
-Apresenta a importância da produção de alimentos e da preservação ambiental, destacando o papel fundamental do campo para a sociedade.
+* HTML5
+* CSS3
+* JavaScript
+* Vercel (Deploy)
+* Inteligência Artificial
 
-### 🏙️ Cidade
-Mostra como a tecnologia e o desenvolvimento urbano sustentável contribuem para melhorar a qualidade de vida e fortalecer a conexão com o setor agrícola.
+## 🎯 Objetivo
 
-### ♻️ Sustentabilidade
-Enfatiza a busca pelo equilíbrio entre o progresso humano e a conservação dos recursos naturais, promovendo práticas responsáveis para as futuras gerações. 
+Promover conhecimento sobre a importância do agronegócio, da sustentabilidade e da integração entre campo e cidade, incentivando a conscientização e a valorização do setor agrícola.
 
-## 🌎 Objetivo
+## 👨‍💻 Autor
 
-Demonstrar que campo e cidade são interdependentes e que a cooperação entre ambos é essencial para garantir alimentação, inovação, preservação ambiental e desenvolvimento sustentável.
-
-## 💚 Mensagem Principal
-
-> Um futuro sustentável começa com equilíbrio entre tecnologia, natureza e produção.
-
-## 🚀 Impacto Esperado
-
-O projeto busca incentivar a formação de cidadãos mais conscientes, promovendo atitudes voltadas para a sustentabilidade, a responsabilidade ambiental e a valorização da produção agrícola. :contentReference[oaicite:7]{index=7}
-
-Desenvolvido para o Concurso Agrinho 2026.
+Desenvolvido por Renatha Miersva para participação no **Agrinho 2026**.
