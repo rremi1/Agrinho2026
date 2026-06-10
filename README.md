@@ -29,6 +29,6 @@ Demonstrar que campo e cidade são interdependentes e que a cooperação entre a
 
 ## 🚀 Impacto Esperado
 
-O projeto busca incentivar a formação de cidadãos mais conscientes, promovendo atitudes voltadas para a sustentabilidade, a responsabilidade ambiental e a valorização da produção agrícola. :contentReference[oaicite:7]{index=7}
+O projeto busca incentivar a formação de cidadãos mais conscientes, promovendo atitudes voltadas para a sustentabilidade, a responsabilidade ambiental e a valorização da produção agrícola.
 
 Desenvolvido para o Concurso Agrinho 2026.
